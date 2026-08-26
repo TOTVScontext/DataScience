@@ -6,17 +6,22 @@
 ---
 
 ## 🎯 Sobre o Projeto
-Apresentamos a esteira de dados e análise textual da plataforma **Context**, desenvolvida para o desafio TOTVS. O objetivo principal desta frente de Data Science é transformar o ruído de transcrições brutas de reuniões em inteligência de negócios estruturada e acionável.
+Apresentamos a entrega da Sprint 3 da plataforma Context, desenvolvida para o desafio TOTVS. O objetivo desta etapa é avançar do processamento textual básico para a aplicação de Machine Learning supervisionado, capacitando a plataforma a classificar transcrições de reuniões de forma automatizada e a predizer o risco de churn com base em indicadores como o NPS.
 
-Através da aplicação de técnicas de Processamento de Linguagem Natural (NLP), o nosso pipeline processa os diálogos para mapear o comportamento do cliente, preparar os dados para modelagem e extrair valor estratégico real.
+Utilizando os pilares de Processamento de Linguagem Natural (NLP) e modelagem preditiva, esta esteira transforma dados textuais em alertas estratégicos para a retenção de clientes.
 
 ## 🚀 O que estamos a entregar nesta Sprint
-Esta entrega está consolidada no notebook `TOTVScontext.ipynb` e contempla as seguintes etapas:
+Esta entrega está consolidada no notebook atualizado e contempla as seguintes etapas:
 
-* **01 & 02. Ingestão e Preparação de Dados:** Carregamento da base de transcrições e aplicação de limpeza textual rigorosa (padronização *lowercase*, remoção de pontuação, filtragem de *stopwords* e normalização).
-* **03. Feature Engineering com TF-IDF:** Transformação do texto limpo em representação matemática (matriz TF-IDF), identificando os termos mais relevantes para o cenário do cliente.
-* **04. Análise Exploratória dos Dados (EDA):** Exploração gráfica e estatística focada na frequência de termos críticos e padrões de linguagem.
-* **05 & 06. Insights de Negócio e Embeddings:** Geração de inteligência acionável (como gatilhos de *upsell* e riscos de *churn*) baseada nos dados processados, complementada por uma fundamentação teórica sobre modelos de *Embeddings* para cenários avançados.
+* *01. Ingestão e Estruturação de Dados: Carregamento integrado de arquivos estruturados (CSV mockados e JSON reais) para garantir a robustez e a generalização da solução.
+
+* *02. Segmentação e Limpeza Avançada: Divisão das transcrições em blocos de fala e aplicação de rotinas rigorosas de limpeza textual (normalização, remoção de stopwords e pontuação).
+
+* *03. Vetorização e Engenharia de Atributos: Transformação do texto em representações numéricas escaláveis utilizando a matriz TF-IDF.
+
+* *04 & 05. Modelagem Preditiva Supervisionada: Treinamento, validação e comparação de algoritmos de classificação (Regressão Logística e Multinomial Naive Bayes).
+
+* *06. Avaliação Focada no Negócio: Análise de métricas de performance priorizando o Recall na classe de risco de churn, garantindo que o negócio não deixe passar clientes insatisfeitos.
 
 ---
 
